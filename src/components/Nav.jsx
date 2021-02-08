@@ -1,19 +1,22 @@
+import c from './Nav.module.css'
+
+
 function Nav() {
   return (
-    <nav className="nav">
-      <div>
+    <nav className={c.nav}>
+      <div className={c.item}>
         <a href="#c">Profile</a>
       </div>
-      <div>
+      <div className={c.item}>
         <a href="#c">Messages</a>
       </div>
-      <div>
+      <div className={c.item}>
         <a href="#c">News</a>
       </div>
-      <div>
+      <div className={c.item}>
         <a href="#c">Music</a>
       </div>
-      <div>
+      <div className={c.item}>
         <a href="#c">Setting</a>
       </div>
     </nav>

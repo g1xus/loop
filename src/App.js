@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Profile from "./components/Profile";
 import Nav from "./components/Nav";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <div className="container">
         <Nav />
-        <Main />
+        <Profile />
       </div>
     </div>
   );
