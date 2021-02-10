@@ -1,10 +1,6 @@
-.profile {
-  grid-area: profile;
-  color: #fff;
-}
 .banner {
-  margin-bottom: 10px;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
