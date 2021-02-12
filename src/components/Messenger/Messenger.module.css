@@ -1,0 +1,16 @@
+.messenger {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+.chats {
+
+}
+.chat {
+
+}
+.messages {
+
+}
+.message {
+
+}

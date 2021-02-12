@@ -13,12 +13,12 @@
     grid-area: container;
     width: 1200px;
     margin: 0 auto;
-    grid-template-areas: "nav profile";
+    grid-template-areas: "nav main";
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
 }
 
 .app-wrapper-content {
-  grid-area: profile;
+  grid-area: main;
   color: #fff;
 }

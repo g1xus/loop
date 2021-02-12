@@ -1,0 +1,16 @@
+.chat {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.chatImg {
+    border-radius: 50%;
+}
+.chatTitle {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.chatPreview {
+    color: #656565;
+}
