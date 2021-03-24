@@ -1,25 +1,35 @@
 import c from './Messenger.module.css'
 import Chat from "./Chats/Chat";
+import Message from "./Message/Message";
+import React, { useEffect, useRef } from 'react'
 
-let chats = [
-    { chatId: 1, chatTitle: '4135 без кураторов', chatImg: 'https://clck.ru/TmUJk', chatPreview: 'Группа гэйэв' },
-    { chatId: 2, chatTitle: 'Айнур Каюмов', chatImg: 'https://clck.ru/TmUKb', chatPreview: 'У меня есть отврётка' },
-    { chatId: 3, chatTitle: 'Гарайшин Артур', chatImg: 'https://clck.ru/TmUKo', chatPreview: 'Уважаемый человек' },
-    { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny' },
-    { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny' },
-    { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny' }
-]
 
-let chatsElement = chats.map(c => <Chat chatImg={c.chatImg} chatTitle={c.chatTitle} chatPreview={c.chatPreview} chatId={c.chatId} />)
 
-function Messenger() {
+function Messenger(props) {
+    let chatsElement = props.chats.map(c => <Chat chatImg={c.chatImg} chatTitle={c.chatTitle} chatPreview={c.chatPreview} chatId={c.chatId} />)
+    let messageElement = props.messages.map(c => <Message messageImg={c.messageImg} messageName={c.messageName} messageText={c.messageText} messageId={c.messageId} isMyMessage={c.isMyMessage} />)
+
+    const messagesEndRef = useRef(null)
+
+    const scrollToBottom = () => {
+        messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+    }
+
+    useEffect(scrollToBottom, [props.messages]);
+
+
     return (
         <main className={c.messenger}>
             <div className={c.chats}>
-                { chatsElement }
+            <div className={c.chatsWrapper}>
+                    {chatsElement}
+                </div>
             </div>
             <div className={c.messages}>
-                Select a chat or create a new one
+                <div className={c.messagesWrapper}>
+                    {messageElement}
+                </div>
+                <div ref={messagesEndRef} />
             </div>
         </main>
     );

@@ -1,21 +1,21 @@
 .app-wrapper {
-    background-color: #222226;
-    display: grid;
-    grid-template-areas: "header" "container";
-    grid-template-rows: 60px;
-    grid-template-columns: 12fr;
-    grid-gap: 10px;
-    height: 100vh;
+  background-color: #222226;
+  display: grid;
+  grid-template-areas: "header" "container";
+  grid-template-rows: 60px;
+  grid-template-columns: 12fr;
+  grid-gap: 10px;
+  height: 100vh;
 }
 
 .container {
-    display: grid;
-    grid-area: container;
-    width: 1200px;
-    margin: 0 auto;
-    grid-template-areas: "nav main";
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 10px;
+  display: grid;
+  grid-area: container;
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-areas: "nav main";
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
 }
 
 .app-wrapper-content {

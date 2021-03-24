@@ -1,0 +1,20 @@
+.message {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.messageImg {
+    border-radius: 50%;
+}
+
+.messageName {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.messageImgWrapper {
+    height: 50px;
+    width: 50px;
+}

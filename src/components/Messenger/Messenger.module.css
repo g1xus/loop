@@ -1,16 +1,29 @@
 .messenger {
     display: grid;
     grid-template-columns: 3fr 9fr;
+    height: 80vh;
 }
 .chats {
-
+    height: 100%;
+    overflow-y: auto;
+    visibility: hidden;
 }
-.chat {
 
-}
 .messages {
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    visibility: hidden;
 }
-.message {
 
+.messagesWrapper,
+.chatsWrapper {
+  visibility: visible;
+}
+.messages:hover,
+.chats:hover,
+.messages:focus,
+.chats:focus {
+  visibility: visible;
 }
