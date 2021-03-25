@@ -16,20 +16,29 @@ function Messenger(props) {
     }
 
     useEffect(scrollToBottom, [props.messages]);
-
+    let addMessage = () => {
+        let text = newMessageElement.current.value;
+        alert(text)
+      }
+      let newMessageElement = React.createRef();
 
     return (
         <main className={c.messenger}>
             <div className={c.chats}>
-            <div className={c.chatsWrapper}>
+                <div className={c.chatsWrapper}>
                     {chatsElement}
                 </div>
             </div>
             <div className={c.messages}>
                 <div className={c.messagesWrapper}>
                     {messageElement}
+                    <div className="addMessage">
+                    <div><textarea cols="30" rows="2" ref={newMessageElement}></textarea></div>
+                    <div><button onClick={addMessage}>New post</button></div>
+                </div>
                 </div>
                 <div ref={messagesEndRef} />
+                
             </div>
         </main>
     );
