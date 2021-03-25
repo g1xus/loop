@@ -1,13 +1,13 @@
-.app-wrapper {
+body {
   background-color: #222226;
+}
+.app-wrapper {
   display: grid;
   grid-template-areas: "header" "container";
   grid-template-rows: 60px;
   grid-template-columns: 12fr;
   grid-gap: 10px;
-  height: 100vh;
 }
-
 .container {
   display: grid;
   grid-area: container;

@@ -18,7 +18,7 @@ function Messenger(props) {
     useEffect(scrollToBottom, [props.messages]);
     let addMessage = () => {
         let text = newMessageElement.current.value;
-        alert(text)
+        props.addMessage(text)
       }
       let newMessageElement = React.createRef();
 

@@ -15,55 +15,72 @@ let state = {
       { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '6' }
     ],
     messages: [
-      {messageImg: 'https://clck.ru/TtPr6', messageName: 'Айдана Нуруллина', messageText: 'Как дела?', messageId: '1'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Хорошо у тебя как?', messageId: '2'},
-      {messageImg: 'https://clck.ru/TtPr6', messageName: 'Айдана Нуруллина', messageText: 'Тоже хорошо', messageId: '3'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'},
-      {messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4'}
+      { messageImg: 'https://clck.ru/TtPr6', messageName: 'Айдана Нуруллина', messageText: 'Как дела?', messageId: '1' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Хорошо у тебя как?', messageId: '2' },
+      { messageImg: 'https://clck.ru/TtPr6', messageName: 'Айдана Нуруллина', messageText: 'Тоже хорошо', messageId: '3' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+      { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' }
     ]
   },
   profilePage: {
     posts: [
-      { message: 'I am gay', img: 'https://clck.ru/TmX9a', id: '1' },
-      { message: 'I am not gay', img: 'https://clck.ru/TmXQo', id: '2' },
-      { message: 'I am bisexual', img: 'https://clck.ru/TmXKJ', id: '3' },
-      { message: 'I am bisexual', img: 'https://clck.ru/TmXKJ', id: '4' },
-      { message: 'I am bisexual', img: 'https://clck.ru/TmXKJ', id: '5' },
-      { message: 'I am bisexual', img: 'https://clck.ru/TmXKJ', id: '6' }
+      { postText: 'I am gay', postImg: 'https://clck.ru/TmX9a', postId: '1' },
+      { postText: 'I am not gay', postImg: 'https://clck.ru/TmXQo', postId: '2' },
+      { postText: 'I am bisexual', postImg: 'https://clck.ru/TmXKJ', postId: '5' },
+      { postText: 'I am bisexual', postImg: 'https://clck.ru/TmXKJ', postId: '6' }
     ]
   }
+}
+
+export let addPost = (postText) => {
+  let newPost = {
+    postText: postText,
+    postImg: 'https://clck.ru/TmXKJ',
+    postId: '5'
+  }
+  state.profilePage.posts.push(newPost);
+}
+
+export let addMessage = (messageText) => {
+  let newMessage = {
+    messageImg: 'https://clck.ru/TtRLc',
+    messageName: 'Радмир Газизов',
+    messageText: messageText,
+    messageId: '5'
+  }
+  state.messengerPage.messages.push(newMessage);
 }
 
 export default state;
