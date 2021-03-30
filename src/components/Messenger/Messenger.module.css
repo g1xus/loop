@@ -12,13 +12,14 @@
 .messages {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: flex-end;
     overflow-y: auto;
     visibility: hidden;
 }
 
-.messagesWrapper,
-.chatsWrapper {
+.messagesScroll,
+.chatsScroll {
+  height: 100%;
   visibility: visible;
 }
 .messages:hover,
@@ -26,4 +27,34 @@
 .messages:focus,
 .chats:focus {
   visibility: visible;
+}
+.addMessage {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.addMessageButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 30px;
+}
+.addMessageButton :hover {
+  cursor: pointer;
+}
+.addMessageButton img {
+  height: 100%;
+}
+.addMessageTextarea {
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  border: #777 solid 1px;
+  background-color: #333336;
+  color: #fff;
 }

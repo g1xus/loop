@@ -17,12 +17,11 @@ function App(props) {
                     <Nav />
                     <div className='app-wrapper-content'>
 
-                        <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts} addPost={props.addPost}/>} />
-                        <Route path='/messenger' render={() => <Messenger chats={props.state.messengerPage.chats} messages={props.state.messengerPage.messages} addMessage={props.addMessage}/>} />
+                        <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts} addPost={props.addPost} newPostText={props.state.profilePage.newPostText} updateNewPostText={props.updateNewPostText}/>} />
+                        <Route path='/messenger' render={() => <Messenger chats={props.state.messengerPage.chats} messages={props.state.messengerPage.messages} addMessage={props.addMessage} newMessageText={props.state.messengerPage.newMessageText} updateNewMessageText={props.updateNewMessageText}/>} />
                         <Route path='/news' render={() => <News />} />
                         <Route path='/music' render={() => <Music />} />
                         <Route path='/settings' render={() => <Settings />} />
-
 
                     </div>
                 </div>

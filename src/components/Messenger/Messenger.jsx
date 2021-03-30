@@ -1,47 +1,48 @@
 import c from './Messenger.module.css'
 import Chat from "./Chats/Chat";
 import Message from "./Message/Message";
-import React, { useEffect, useRef } from 'react'
-
+import React, { useEffect } from 'react'
+import addMessageImg from './addMessage.svg'
 
 
 function Messenger(props) {
     let chatsElement = props.chats.map(c => <Chat chatImg={c.chatImg} chatTitle={c.chatTitle} chatPreview={c.chatPreview} chatId={c.chatId} />)
-    let messageElement = props.messages.map(c => <Message messageImg={c.messageImg} messageName={c.messageName} messageText={c.messageText} messageId={c.messageId} isMyMessage={c.isMyMessage} />)
+    let messagesElement = props.messages.map(c => <Message messageImg={c.messageImg} messageName={c.messageName} messageText={c.messageText} messageId={c.messageId} isMyMessage={c.isMyMessage} />)
 
-    const messagesEndRef = useRef(null)
-
-    const scrollToBottom = () => {
-        messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+    let addMessage = () => {
+        props.addMessage()
+        messagesScrollToBottom()
     }
 
-    useEffect(scrollToBottom, [props.messages]);
-    let addMessage = () => {
-        let text = newMessageElement.current.value;
-        props.addMessage(text)
-      }
-      let newMessageElement = React.createRef();
-
+    let onMessageChange = () => {
+        let text = newMessageElement.current.value
+        props.updateNewMessageText(text)
+    }
+    let messagesScrollToBottom = () => {
+        messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
+    }
+    useEffect(messagesScrollToBottom)
+    let messagesEnd = React.createRef()
+    let newMessageElement = React.createRef();
     return (
         <main className={c.messenger}>
             <div className={c.chats}>
-                <div className={c.chatsWrapper}>
+                <div className={c.chatsScroll}>
                     {chatsElement}
                 </div>
             </div>
             <div className={c.messages}>
-                <div className={c.messagesWrapper}>
-                    {messageElement}
-                    <div className="addMessage">
-                    <div><textarea cols="30" rows="2" ref={newMessageElement}></textarea></div>
-                    <div><button onClick={addMessage}>New post</button></div>
+                <div className={c.messagesScroll}>
+                    {messagesElement}
+                    <div ref={messagesEnd}/>
                 </div>
-                </div>
-                <div ref={messagesEndRef} />
-                
+            </div>
+            <div/>
+            <div className={c.addMessage}>
+                <textarea ref={newMessageElement} onChange={onMessageChange} value={props.newMessageText} className={c.addMessageTextarea}/>
+                <button onClick={addMessage} className={c.addMessageButton}><img src={addMessageImg} alt="Send message"/></button>
             </div>
         </main>
     );
 }
-
 export default Messenger;
