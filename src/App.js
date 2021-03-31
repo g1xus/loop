@@ -16,9 +16,8 @@ function App(props) {
                 <div className="container">
                     <Nav />
                     <div className='app-wrapper-content'>
-
-                        <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts} addPost={props.addPost} newPostText={props.state.profilePage.newPostText} updateNewPostText={props.updateNewPostText}/>} />
-                        <Route path='/messenger' render={() => <Messenger chats={props.state.messengerPage.chats} messages={props.state.messengerPage.messages} addMessage={props.addMessage} newMessageText={props.state.messengerPage.newMessageText} updateNewMessageText={props.updateNewMessageText}/>} />
+                        <Route path='/profile' render={() => <Profile posts={props.state.profilePage.posts} newPostText={props.state.profilePage.newPostText} dispatch={props.dispatch}/>} />
+                        <Route path='/messenger' render={() => <Messenger messages={props.state.messengerPage.messages} chats={props.state.messengerPage.chats} newMessageText={props.state.messengerPage.newMessageText} dispatch={props.dispatch}/>} />
                         <Route path='/news' render={() => <News />} />
                         <Route path='/music' render={() => <Music />} />
                         <Route path='/settings' render={() => <Settings />} />

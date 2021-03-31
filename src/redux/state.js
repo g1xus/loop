@@ -45,43 +45,42 @@ let store = {
       newPostText: ''
     }
   },
-  getState() {
-    return this._state
-  },
   _rerenderEntireTree() {
     console.log('State was changed')
   },
-  addPost() {
-    let newPost = {
-      postText: this._state.profilePage.newPostText,
-      postImg: 'https://clck.ru/TmXKJ',
-      postId: '5'
-    }
-    this._state.profilePage.posts.push(newPost);
-    this._state.profilePage.newPostText = ''
-    this._rerenderEntireTree(this._state)
-  },
-  addMessage() {
-    let newMessage = {
-      messageImg: 'https://clck.ru/TtRLc',
-      messageName: 'Радмир Газизов',
-      messageText: this._state.messengerPage.newMessageText,
-      messageId: '5'
-    }
-    this._state.messengerPage.messages.push(newMessage);
-    this._state.messengerPage.newMessageText = ''
-    this._rerenderEntireTree(this._state)
-  },
-  updateNewMessageText(newText) {
-    this._state.messengerPage.newMessageText = newText
-    this._rerenderEntireTree(this._state)
-  },
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText
-    this._rerenderEntireTree(this._state)
+  getState() {
+    return this._state
   },
   subscribe(observer) {
     this._rerenderEntireTree = observer
+  },
+  dispatch(action) {
+    if (action.type === 'ADD-POST') {
+      let newPost = {
+        postText: this._state.profilePage.newPostText,
+        postImg: 'https://clck.ru/TmXKJ',
+        postId: '5'
+      }
+      this._state.profilePage.posts.push(newPost);
+      this._state.profilePage.newPostText = ''
+      this._rerenderEntireTree(this._state)
+    } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
+      this._state.profilePage.newPostText = action.newText
+    this._rerenderEntireTree(this._state)
+    } else if (action.type === 'ADD-MESSAGE') {
+      let newMessage = {
+        messageImg: 'https://clck.ru/TtRLc',
+        messageName: 'Радмир Газизов',
+        messageText: this._state.messengerPage.newMessageText,
+        messageId: '5'
+      }
+      this._state.messengerPage.messages.push(newMessage);
+      this._state.messengerPage.newMessageText = ''
+      this._rerenderEntireTree(this._state)
+    } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT'){
+      this._state.messengerPage.newMessageText = action.newText
+    this._rerenderEntireTree(this._state)
+    }
   }
 }
 

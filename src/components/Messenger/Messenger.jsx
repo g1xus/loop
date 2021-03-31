@@ -10,13 +10,13 @@ function Messenger(props) {
     let messagesElement = props.messages.map(c => <Message messageImg={c.messageImg} messageName={c.messageName} messageText={c.messageText} messageId={c.messageId} isMyMessage={c.isMyMessage} />)
 
     let addMessage = () => {
-        props.addMessage()
+        props.dispatch({type: 'ADD-MESSAGE'})
         messagesScrollToBottom()
     }
 
     let onMessageChange = () => {
-        let text = newMessageElement.current.value
-        props.updateNewMessageText(text)
+        let newText = newMessageElement.current.value
+        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText})
     }
     let messagesScrollToBottom = () => {
         messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
