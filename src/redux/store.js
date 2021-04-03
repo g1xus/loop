@@ -1,3 +1,7 @@
+import profileReducer from './profile-reducer'
+import messengerReducer from './messenger-reducer'
+
+
 let store = {
   _state: {
     messengerPage: {
@@ -55,33 +59,12 @@ let store = {
     this._rerenderEntireTree = observer
   },
   dispatch(action) {
-    if (action.type === 'ADD-POST') {
-      let newPost = {
-        postText: this._state.profilePage.newPostText,
-        postImg: 'https://clck.ru/TmXKJ',
-        postId: '5'
-      }
-      this._state.profilePage.posts.push(newPost);
-      this._state.profilePage.newPostText = ''
-      this._rerenderEntireTree(this._state)
-    } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
-      this._state.profilePage.newPostText = action.newText
+    this._state.profilePage = profileReducer(this._state.profilePage, action)
+    this._state.messengerPage = messengerReducer(this._state.messengerPage, action)
     this._rerenderEntireTree(this._state)
-    } else if (action.type === 'ADD-MESSAGE') {
-      let newMessage = {
-        messageImg: 'https://clck.ru/TtRLc',
-        messageName: 'Радмир Газизов',
-        messageText: this._state.messengerPage.newMessageText,
-        messageId: '5'
-      }
-      this._state.messengerPage.messages.push(newMessage);
-      this._state.messengerPage.newMessageText = ''
-      this._rerenderEntireTree(this._state)
-    } else if (action.type === 'UPDATE-NEW-MESSAGE-TEXT'){
-      this._state.messengerPage.newMessageText = action.newText
-    this._rerenderEntireTree(this._state)
-    }
   }
 }
+
+
 
 export default store;

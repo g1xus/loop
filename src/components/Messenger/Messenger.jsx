@@ -3,6 +3,8 @@ import Chat from "./Chats/Chat";
 import Message from "./Message/Message";
 import React, { useEffect } from 'react'
 import addMessageImg from './addMessage.svg'
+import {addMessageActionCreator, updateNewMessageTextActionCreator} from '../../redux/messenger-reducer'
+
 
 
 function Messenger(props) {
@@ -10,13 +12,13 @@ function Messenger(props) {
     let messagesElement = props.messages.map(c => <Message messageImg={c.messageImg} messageName={c.messageName} messageText={c.messageText} messageId={c.messageId} isMyMessage={c.isMyMessage} />)
 
     let addMessage = () => {
-        props.dispatch({type: 'ADD-MESSAGE'})
+        props.dispatch(addMessageActionCreator())
         messagesScrollToBottom()
     }
 
     let onMessageChange = () => {
         let newText = newMessageElement.current.value
-        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newText})
+        props.dispatch(updateNewMessageTextActionCreator(newText))
     }
     let messagesScrollToBottom = () => {
         messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
