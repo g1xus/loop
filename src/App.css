@@ -7,6 +7,7 @@ body {
   grid-template-rows: 60px;
   grid-template-columns: 12fr;
   grid-gap: 10px;
+  max-height: 100%;
 }
 .container {
   display: grid;
@@ -21,4 +22,5 @@ body {
 .app-wrapper-content {
   grid-area: main;
   color: #fff;
+  height: 80vh;
 }

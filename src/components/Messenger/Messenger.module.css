@@ -1,32 +1,22 @@
 .messenger {
     display: grid;
     grid-template-columns: 3fr 9fr;
-    height: 80vh;
+    height: 100%;
 }
 .chats {
-    height: 100%;
-    overflow-y: auto;
-    visibility: hidden;
+    overflow-y: hidden;
+    padding-right: 17px;
+}
+.messenger :hover {
+  overflow-y: auto;
+  padding-right: 0;
 }
 
 .messages {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    overflow-y: auto;
-    visibility: hidden;
-}
-
-.messagesScroll,
-.chatsScroll {
-  height: 100%;
-  visibility: visible;
-}
-.messages:hover,
-.chats:hover,
-.messages:focus,
-.chats:focus {
-  visibility: visible;
+    overflow-y: hidden;
+    padding-right: 17px;
 }
 .addMessage {
   display: flex;

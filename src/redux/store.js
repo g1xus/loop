@@ -9,7 +9,24 @@ let store = {
         { chatId: 1, chatTitle: '4135 без кураторов', chatImg: 'https://clck.ru/TmUJk', chatPreview: 'Группа гэйэв', id: '1' },
         { chatId: 2, chatTitle: 'Айнур Каюмов', chatImg: 'https://clck.ru/TmUKb', chatPreview: 'У меня есть отврётка', id: '2' },
         { chatId: 3, chatTitle: 'Гарайшин Артур', chatImg: 'https://clck.ru/TmUKo', chatPreview: 'Уважаемый человек', id: '3' },
-        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' }],
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' },
+        { chatId: 4, chatTitle: 'Местный Дурачок', chatImg: 'https://clck.ru/TmULC', chatPreview: '#freeNavalny', id: '4' }
+      ],
       messages: [
         { messageImg: 'https://clck.ru/TtPr6', messageName: 'Айдана Нуруллина', messageText: 'Как дела?', messageId: '1' },
         { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Хорошо у тебя как?', messageId: '2' },
@@ -35,16 +52,19 @@ let store = {
         { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
         { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
         { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
-        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' }
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
+        { messageImg: 'https://clck.ru/TtRLc', messageName: 'Радмир Газизов', messageText: 'Пока', messageId: '4' },
       ],
       newMessageText: ''
     },
     profilePage: {
       posts: [
-        { postText: 'I am gay', postImg: 'https://clck.ru/TmX9a', postId: '1' },
-        { postText: 'I am not gay', postImg: 'https://clck.ru/TmXQo', postId: '2' },
-        { postText: 'I am bisexual', postImg: 'https://clck.ru/TmXKJ', postId: '5' },
-        { postText: 'I am bisexual', postImg: 'https://clck.ru/TmXKJ', postId: '6' }
+        { postText: 'Привет', postImg: 'https://clck.ru/TmX9a', postId: '1' },
+        { postText: 'Hello', postImg: 'https://clck.ru/TmXQo', postId: '2' },
       ],
       newPostText: ''
     }
