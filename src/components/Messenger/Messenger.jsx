@@ -44,12 +44,15 @@ function Messenger(props) {
   let newMessageElement = React.createRef();
   return (
     <main className={c.messenger}>
-      <div className={c.chats}>{chatsElement}</div>
-      <div className={c.messages}>
-        {messagesElement}
-        <div ref={messagesEnd} />
+      <div className={c.scrollWrapper}>
+
+        <div className={c.chats}>{chatsElement}</div>
+        <div className={c.messages}>
+          {messagesElement}
+          <div ref={messagesEnd} />
+        </div>
       </div>
-      <div />
+      <div className={c.addMessageWrapper}>
       <div className={c.addMessage}>
         <textarea
           ref={newMessageElement}
@@ -60,8 +63,10 @@ function Messenger(props) {
         <button onClick={addMessage} className={c.addMessageButton}>
           <img src={addMessageImg} alt="Send message" />
         </button>
+        </div>
       </div>
     </main>
+    
   );
 }
 export default Messenger;

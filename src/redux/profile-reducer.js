@@ -5,8 +5,15 @@ export const addPostActionCreator = () => ({ type: ADD_POST })
 export const updateNewPostTextActionCreator = (newText) =>
   ({ type: UPDATE_NEW_POST_TEXT, newText })
 
+let initialState = {
+    posts: [
+        { postText: 'Привет', postImg: 'https://clck.ru/TmX9a', postId: '1' },
+        { postText: 'Hello', postImg: 'https://clck.ru/TmXQo', postId: '2' },
+      ],
+      newPostText: ''
+}
 
-const profileReducer = (state, action) => {
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
             let newPost = {

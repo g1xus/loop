@@ -1,24 +1,33 @@
+.scrollWrapper {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  height: 100%;
+}
+.scrollWrapper :hover {
+  overflow-y: auto;
+  padding-right: 0;
+}
+.addMessageWrapper {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
 .messenger {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
     height: 100%;
 }
 .chats {
     overflow-y: hidden;
-    padding-right: 17px;
 }
-.messenger :hover {
-  overflow-y: auto;
-  padding-right: 0;
-}
-
 .messages {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
     padding-right: 17px;
 }
+.messages :first-child {
+  margin-top: auto;
+}
 .addMessage {
+  grid-column-start: 2;
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -28,6 +37,7 @@
   border: none;
   outline: none;
   height: 30px;
+  overflow: hidden;
 }
 .addMessageButton :hover {
   cursor: pointer;
